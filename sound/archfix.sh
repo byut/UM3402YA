@@ -8,7 +8,7 @@
     && echo -ne "[archfix]: This script must be run on Arch Linux!\n" >&2 \
     && exit 1
 
-[ ! command -v "iasl" &> /dev/null ]                    \
+! command -v "iasl" &> /dev/null                        \
     && echo -ne "[archfix]: Command not found (iasl). " \
     && echo -ne "Try 'pacman -S acpica'\n"              \
     && exit 1
